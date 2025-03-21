@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manipulación del DOM</title>
+</head>
+<body>
+    <h1 id="miTitulo">¡Hola Mundo!</h1>
+    <p class="parrafo">Este es un párrafo.</p>
+    <button onclick="cambiarTexto()">Cambiar Texto</button>
+
+    <script>
+        function cambiarTexto() {
+            const titulo = document.getElementById("miTitulo");
+            titulo.textContent = "¡Texto modificado!";
+            titulo.style.color = "red";
+        }
+    </script>
+</body>
+</html>
