@@ -71,16 +71,22 @@
         </div>
     </section>
 
+
+
     <section id="contacto" class="section">
         <h2>Contáctanos</h2>
-        <form>
-            <input type="text" placeholder="Tu Nombre" required>
-            <input type="email" placeholder="Tu Correo" required>
-            <textarea placeholder="Mensaje" required></textarea>
+        <form id="contactForm">
+            <input type="email" id="email" placeholder="Tu correo" required>
+            <input type="text" id="subject" placeholder="Asunto" required>
+            <textarea id="message" placeholder="Escribe tu mensaje aquí" required></textarea>
             <button type="submit">Enviar</button>
         </form>
+        
+        <p id="responseMessage"></p>
+        
     </section>
-
+    <script src="backend/index.js"></script>
+    <script src="backend/script.js"></script>
     <footer>
         <p>© 2025 zetaCode. Todos los derechos reservados.</p>
     </footer>
